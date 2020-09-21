@@ -30,7 +30,7 @@ class Scraper
       if social.include?("twitter")
         hash[:twitter] = "social"
       end
-      binding.pri
+      binding.pry
     end
 
   end
