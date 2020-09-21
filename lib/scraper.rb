@@ -9,6 +9,7 @@ class Scraper
     students = doc.css("body > div > div > div.roster-cards-container")
     students.each do |student|
       puts student.text.strip
+      binding.pry
     end
   end
 
