@@ -29,6 +29,10 @@ class Scraper
       social = prof.attribute("href").value
       if social.include?("twitter")
         hash[:twitter] = social
+      elsif social.include?("linkedin")
+        hash[:linkedin] = social
+      elsif social.include?("github")
+        hash[:github] = social
       end
       binding.pry
     end
