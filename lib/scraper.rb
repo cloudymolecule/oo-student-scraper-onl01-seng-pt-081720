@@ -24,7 +24,7 @@ class Scraper
     array = []
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
-    #profile = doc.css()
+    #profile = doc.css(".vitals-container")
     binding.pry
   end
 
