@@ -33,9 +33,10 @@ class Scraper
         hash[:linkedin] = social
       elsif social.include?("github")
         hash[:github] = social
+      elsif social.include?("")
+        hash[:blog] = social
       end
     end
-    #hash[:blog] =
     hash[:profile_quote] =  doc.css(".profile-quote").text
     hash[:bio] = doc.css(".description-holder p").text
   end
@@ -47,5 +48,5 @@ end
 # linkedin = done
 # github = done
 # blog =
-# profile_quote =
-# bio =
+# profile_quote = done
+# bio = done
