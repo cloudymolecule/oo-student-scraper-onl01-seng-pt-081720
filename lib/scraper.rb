@@ -28,7 +28,7 @@ class Scraper
     profile.each do |prof|
       social = prof.attribute("href").value
       if social.include?("twitter")
-        hash[:twitter] = "social"
+        hash[:twitter] = social
       end
       binding.pry
     end
