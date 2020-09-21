@@ -13,7 +13,7 @@ class Scraper
       name = student.css(".student-name").text
       location = student.css(".student-location").text
       profile = student.css("a").attribute("href").value
-      binding.pry
+      temp = {name: name, location: location, profile_url: profile}
     end
 
   end
