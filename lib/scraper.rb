@@ -33,7 +33,7 @@ class Scraper
         hash[:linkedin] = social
       elsif social.include?("github")
         hash[:github] = social
-      elsif social.include?("")
+      elsif social.include?("http")
         hash[:blog] = social
       end
     end
