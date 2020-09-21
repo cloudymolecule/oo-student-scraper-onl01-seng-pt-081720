@@ -11,7 +11,7 @@ class Scraper
     students.each do |student|
       name = student.css(".student-name").text
       location = student.css(".student-location").text
-      profile = 
+      profile = student.css("a").attribute("href").value
       binding.pry
     end
 
