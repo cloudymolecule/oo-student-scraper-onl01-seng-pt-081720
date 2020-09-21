@@ -14,6 +14,7 @@ class Scraper
       location = student.css(".student-location").text
       profile = student.css("a").attribute("href").value
       temp = {name: name, location: location, profile_url: profile}
+      binding.pry
     end
 
   end
