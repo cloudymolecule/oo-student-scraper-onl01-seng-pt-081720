@@ -26,9 +26,7 @@ class Scraper
     doc = Nokogiri::HTML(html)
     profile = doc.css(".social-icon-container a")
     profile.each do |prof|
-      prof.each do |pro|
-        binding.pry
-      end
+      binding.pry
     end
 
   end
