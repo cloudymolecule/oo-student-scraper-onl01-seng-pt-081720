@@ -17,7 +17,7 @@ class Scraper
       array << temp
 
     end
-    binding.pry
+    array
   end
 
   def self.scrape_profile_page(profile_url)
