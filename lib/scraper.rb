@@ -9,6 +9,7 @@ class Scraper
     doc = Nokogiri::HTML(html)
     students = doc.css(".student-card a")
     students.each do |student|
+      
       binding.pry
     end
 
