@@ -25,11 +25,11 @@ class Student
 
   def add_student_attributes(attributes_hash)
     send("twitter=", attributes_hash[:twitter])
-    self.send("linkedin=", attributes_hash[:linkedin])
-    self.send("github=", attributes_hash[:github])
-    self.send("blog=", attributes_hash[:blog])
-    self.send("bio=", attributes_hash[:bio])
-    self.send("profile_quote=", attributes_hash[:profile_quote])
+    send("linkedin=", attributes_hash[:linkedin])
+    send("github=", attributes_hash[:github])
+    send("blog=", attributes_hash[:blog])
+    send("bio=", attributes_hash[:bio])
+    send("profile_quote=", attributes_hash[:profile_quote])
 
   end
 
