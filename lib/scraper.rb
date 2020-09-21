@@ -34,9 +34,9 @@ class Scraper
       elsif social.include?("github")
         hash[:github] = social
       end
-      binding.pry
-    end
 
+    end
+    binding.pry
   end
 
 end
