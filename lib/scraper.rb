@@ -10,7 +10,7 @@ class Scraper
     # students.each do |student|
     #   puts student.text.strip
       binding.pry
-    end
+    #end
   end
 
   def self.scrape_profile_page(profile_url)
