@@ -8,7 +8,10 @@ class Scraper
     html = open(index_url)
     doc = Nokogiri::HTML(html)
     students = doc.css(".student-card a")
-    binding.pry
+    students.each do |student|
+      binding.pry
+    end
+
   end
 
   def self.scrape_profile_page(profile_url)
