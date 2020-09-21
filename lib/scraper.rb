@@ -25,6 +25,7 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     #profile = doc.css()
+    binding.pry
   end
 
 end
