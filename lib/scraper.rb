@@ -34,9 +34,10 @@ class Scraper
       elsif social.include?("github")
         hash[:github] = social
       end
-    binding.pry
     end
-    #binding.pry
+    #hash[:blog] =
+    hash[:profile_quote] =  doc.css(".profile-quote").text
+    #hash[:bio] = 
   end
 
 end
