@@ -5,6 +5,7 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    self.send("name=", student_hash[:name])
     self.send("twitter=", student_hash[:twitter])
     self.send("linkedin=", student_hash[:linkedin])
     self.send("github=", student_hash[:github])
