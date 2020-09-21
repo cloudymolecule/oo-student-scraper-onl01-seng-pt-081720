@@ -39,7 +39,6 @@ class Scraper
     end
     hash[:profile_quote] =  doc.css(".profile-quote").text
     hash[:bio] = doc.css(".description-holder p").text
-    binding.pry
   end
 
 end
