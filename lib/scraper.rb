@@ -43,11 +43,3 @@ class Scraper
   end
 
 end
-
-# prof.attribute("href").value
-# twitter = done
-# linkedin = done
-# github = done
-# blog =
-# profile_quote = done
-# bio = done
